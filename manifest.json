@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "description": "Modifies links on Hacker News to open in a new tab",
+    "name": "HN New Tab",
+    "version": "1.0",
+    "permissions": ["activeTab", "storage"],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "content_scripts": [
+        {
+            "matches": ["*://news.ycombinator.com/*"],
+            "js": ["dist/bundle.js"]
+        }
+    ]
+}
