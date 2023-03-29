@@ -12,4 +12,4 @@ const changeLinksToOpenInNewTab = (): void => {
     })
 }
 
-document.addEventListener('DOMContentLoaded', changeLinksToOpenInNewTab)
+changeLinksToOpenInNewTab()
